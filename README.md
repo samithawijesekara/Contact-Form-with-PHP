@@ -13,6 +13,8 @@ Create a simple contact form by using PHP
 ## What is this?<a name="What"/>
 This is a simple contact form by using PHP and mail server.<br>
 
+<img src="img/a.PNG">
+
 ## For why?<a name="why"/>
 One of the most important reasons to have a contact form on your website is to reduce spam and keep your site secure. When you display your email address on your site, you're more likely to get unwanted emails. That's why most important reasons to have a contact form on your website.<br>
 
@@ -24,10 +26,10 @@ One of the most important reasons to have a contact form on your website is to r
 ## How to use this?<a name="How"/>
 
 Just filling the form fields and click **send message** button.<br>
-<img src="img/a.PNG">
+<img src="img/b.PNG">
 
 If the message is successfully sent you can see the end of the domain name added text called "mailsend".<br>
-<img src="img/b.PNG">
+<img src="img/c.PNG">
 
 
 
