@@ -1,0 +1,281 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    animation-name: backgroundAnimi;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@keyframes backgroundAnimi {
+    0% {
+        background-color: #16114b;
+    }
+    25% {
+        background-color: #221c6b;
+    }
+    50% {
+        background-color: #241d88;
+    }
+    75% {
+        background-color: #221c6b;
+    }
+    100% {
+        background-color: #16114b;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 24.99%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 74.99%;
+}
+
+.col-10 {
+    width: 82.33%;
+}
+
+.col-11 {
+    width: 90.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+@media screen and (max-width:768px) {
+    [class*="col-"] {
+        width: 90%;
+    }
+    .side {
+        width: 5%;
+    }
+}
+
+.contactForm {
+    position: absolute;
+    background-color: #06006e;
+    border-radius: 30px;
+    border: 4px solid #fff;
+    padding: 20px;
+    width: 80%;
+    margin-top: 30px;
+    left: 10%;
+    min-height: 350px;
+}
+
+.heading {
+    font-size: 50px;
+    color: #FFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+input,
+textarea {
+    margin-top: 2px;
+    margin-bottom: 30px;
+    margin-left: 5%;
+    background-color: #FFF;
+    border-radius: 20px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    width: 90%;
+    resize: none;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+    radius: 30px;
+    color: white;
+    background-color: rgb(35, 153, 173);
+    cursor: pointer;
+    height: 50px;
+    width: 90%;
+    margin-left: 5%;
+    transition: 1000ms;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+button:hover {
+    background-color: rgb(2, 204, 110);
+    transition: 1000ms;
+    border: none;
+}
+
+input:focus {
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+/*Adding a smooth scroll bar styles*/
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(19, 17, 34, 0.2);
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgb(19, 17, 34);
+}
+
+.footer {
+    text-align: center;
+    color: crimson(126, 9, 34);
+    font-weight: 500;
+    font-size: 12px;
+    margin-top: 650px;
+    margin-left: 45%;
+    padding-bottom: 15px;
+    position: absolute;
+    color: #d2c1f1;
+}
+
+a {
+    color: #e7daff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(2, 204, 110);
+    text-decoration: none;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 544px) {
+    .contactForm {
+        width: 80%;
+        left: 10%;
+    }
+    .footer {
+        margin-left: 22%;
+    }
+    .heading {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 544px) {
+    .contactForm {
+        width: 80%;
+        left: 10%;
+    }
+    .footer {
+        margin-left: 33%;
+        padding-top: 10px;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 622px) {
+    .contactForm {
+        width: 70%;
+        left: 15%;
+    }
+    .footer {
+        margin-left: 35%;
+        padding-top: 10px;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .contactForm {
+        width: 60%;
+        left: 20%;
+    }
+    .footer {
+        margin-left: 38%;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .contactForm {
+        width: 50%;
+        left: 25%;
+    }
+    .footer {
+        margin-left: 40%;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .contactForm {
+        width: 40%;
+        left: 30%;
+    }
+    .footer {
+        margin-left: 43%;
+    }
+}
