@@ -1,7 +1,7 @@
 # Contact-Form-with-PHP
 Create a simple contact form by using PHP
 
-💻😍 Online Demo : 
+💻😍 Online Demo : https://glacial-citadel-20263.herokuapp.com/
 
 ### Table of Content
 -01 [What is this?](#What)</br>
@@ -26,7 +26,7 @@ One of the most important reasons to have a contact form on your website is to r
 Just filling the form fields and click **send message** button.<br>
 <img src="img/a.PNG">
 
-If the message is successfully sent you will get the alert.<br>
+If the message is successfully sent you can see the end of the domain name added text called "mailsend".<br>
 <img src="img/b.PNG">
 
 
